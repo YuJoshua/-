@@ -1,0 +1,35 @@
+import random
+ans = random.randint(1,10)
+print("lessen no. 4")
+temp=input("猜猜我在想什麼數字：")
+while temp. isnumeric():
+    guess=int(temp)
+    time=0
+    while guess!=ans and time<2:
+          
+        if guess>ans:
+            print("太大了")
+
+        else:
+            print("太小拉")
+
+        if time == 0:
+            print("猜錯一次了")
+
+        else:
+            print("剩下最後一次機會")
+
+    temp=input("再來一次：")
+    guess=int(temp)
+    time=time+1
+
+    if time ==2:
+        print("猜錯太多次了再見")
+    else:
+        print("猜對拉")
+        print("猜對了也沒有獎賞")
+        print("遊戲結束拉")
+
+
+temp = input("請輸入1-10的整數：")
+guess = int(temp)
